@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Automated coverage for HEXURE-6 manual case 21125994. Verifies each audience CTA navigates to the matching destination.</description>
+   <name>HEXURE-6 Audience Section Links Open Their Matching Destinations</name>
+   <tag>GenAI,audience,navigation,HEXURE-6</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>createdByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>createdByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <origin>STUDIOASSIST</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a3bffd37-a7e6-4403-a9c5-c05307607371</testCaseGuid>
+</TestCaseEntity>

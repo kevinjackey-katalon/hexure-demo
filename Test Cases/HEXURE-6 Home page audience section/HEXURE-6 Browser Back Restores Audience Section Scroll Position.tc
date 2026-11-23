@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Desktop-browser-only automated coverage for all Current Clients destinations and desktop navigation controls. Mobile viewport and mobile navigation behavior are intentionally excluded.</description>
-   <name>Current Clients links open intended destinations</name>
-   <tag>GenAI</tag>
+   <description>Automated coverage for HEXURE-6 manual case 21125995. Verifies browser Back returns to the home page and restores the audience-section viewport.</description>
+   <name>HEXURE-6 Browser Back Restores Audience Section Scroll Position</name>
+   <tag>GenAI,browser-back,audience,HEXURE-6</tag>
    <integratedEntity>
       <productName>TESTOPS</productName>
       <properties>
@@ -25,8 +25,8 @@
       </properties>
       <type>TESTCASE</type>
    </integratedEntity>
-   <comment>Uses the CommonLogin custom keyword before validating the Current Clients navigation and destination URLs.</comment>
+   <comment></comment>
    <origin>STUDIOASSIST</origin>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>ac6acd37-7086-4f0b-b9d4-cb11fb737357</testCaseGuid>
+   <testCaseGuid>1f19856d-abf4-43d7-89e3-d320378ce38c</testCaseGuid>
 </TestCaseEntity>

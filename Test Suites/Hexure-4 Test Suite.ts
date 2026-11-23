@@ -17,14 +17,14 @@
       <guid>95649c81-c0df-485d-9291-4871783babf4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Hexure-4 Client Login and Current Clients portal links/Client Login links open intended destinations</testCaseId>
+      <testCaseId>Test Cases/HEXURE-4 Client Login and Current Clients portal links/Client Login links open intended destinations</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>270fd5d4-27b9-4204-bd87-97baf9063783</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Hexure-4 Client Login and Current Clients portal links/Footer Trust Center link matches portal destination</testCaseId>
+      <testCaseId>Test Cases/HEXURE-4 Client Login and Current Clients portal links/Footer Trust Center link matches portal destination</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
