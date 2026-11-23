@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Automated version of manual test case 21124550.</description>
+   <name>Logo Returns to Hexure Homepage</name>
+   <tag>GenAI</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>createdByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>createdByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <origin>STUDIOASSIST</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c5ceb6cf-d885-4079-9e92-e9b98c9bf6ea</testCaseGuid>
+</TestCaseEntity>

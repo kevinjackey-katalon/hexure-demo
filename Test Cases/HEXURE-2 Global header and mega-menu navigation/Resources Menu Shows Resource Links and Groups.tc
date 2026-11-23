@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Automated version of manual test case 21124556.</description>
+   <name>Resources Menu Shows Resource Links and Groups</name>
+   <tag>GenAI</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>createdByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>createdByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <origin>STUDIOASSIST</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>09e1f50d-fceb-427e-88a0-46498124ab0e</testCaseGuid>
+</TestCaseEntity>
