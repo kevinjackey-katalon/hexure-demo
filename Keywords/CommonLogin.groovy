@@ -11,14 +11,16 @@ class CommonLogin {
 
     /**
      * Opens the requested URL and dismisses the privacy-consent dialog when it is displayed.
-     * The consent button is checked directly because CookieYes can render its overlay
-     * before the dialog text becomes available in the DOM.
      */
     @Keyword
     def openUrlAndAcceptPrivacy(String url = 'https://hexure.com/') {
         WebUI.openBrowser('')
         WebUI.navigateToUrl(url)
-        WebUI.waitForPageLoad(30)
+        WebUI.waitForPageLoad(30, FailureHandling.STOP_ON_FAILURE)
+
+        TestObject pageBody = new TestObject('pageBody')
+        pageBody.addProperty('xpath', ConditionType.EQUALS, '//body')
+        WebUI.waitForElementPresent(pageBody, 30, FailureHandling.STOP_ON_FAILURE)
 
         TestObject acceptAllButton = new TestObject('acceptAllButton')
         acceptAllButton.addProperty(
@@ -27,11 +29,23 @@ class CommonLogin {
             "//button[normalize-space()='Accept All' or contains(normalize-space(.), 'Accept All')] | //*[@role='button' and (normalize-space()='Accept All' or contains(normalize-space(.), 'Accept All'))]"
         )
 
-        // CookieYes may display the blocking overlay while its dialog text is still rendering.
-        // Wait for the actual consent control and click it when available; otherwise continue.
-        if (WebUI.waitForElementClickable(acceptAllButton, 10)) {
-            WebUI.click(acceptAllButton)
-            WebUI.waitForElementNotPresent(acceptAllButton, 10, FailureHandling.OPTIONAL)
+        // CookieYes may render asynchronously or cover the page with its overlay.
+        if (WebUI.waitForElementClickable(acceptAllButton, 15, FailureHandling.OPTIONAL)) {
+            WebUI.click(acceptAllButton, FailureHandling.OPTIONAL)
+        } else {
+            // Fallback for TestCloud sessions where the overlay is present before the
+            // consent control becomes Selenium-clickable.
+            WebUI.executeJavaScript('''
+                const buttons = Array.from(document.querySelectorAll('button, [role="button"]'));
+                const button = buttons.find(element => /accept all/i.test((element.innerText || element.textContent || '').trim()));
+                if (button) button.click();
+            ''', [])
         }
+
+        WebUI.waitForElementNotPresent(acceptAllButton, 15, FailureHandling.OPTIONAL)
+        WebUI.executeJavaScript('''
+            const overlay = document.querySelector('.cky-overlay');
+            if (overlay && !document.querySelector('.cky-consent-bar')) overlay.remove();
+        ''', [])
     }
 }

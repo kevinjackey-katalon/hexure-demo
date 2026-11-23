@@ -11,13 +11,14 @@ CustomKeywords.'CommonLogin.openUrlAndAcceptPrivacy'('https://hexure.com/')
 WebUI.verifyElementPresent(findTestObject('Hexure-4 Client Login and Current Clients portal links/Footer Trust Center'), 10)
 
 // Step 3: Define the expected Trust Center portal URL.
-String portalUrl = 'https://trust.hexure.com/'
+String portalUrl = 'https://trust.hexure.com'
 
 // Step 4: Navigate to the expected Trust Center portal destination.
-WebUI.navigateToUrl(portalUrl)
+WebUI.navigateToUrl(portalUrl + '/')
 
-// Step 5: Confirm that the Trust Center portal resolves to the expected URL.
-WebUI.verifyMatch(WebUI.getUrl(), java.util.regex.Pattern.quote(portalUrl) + '.*', true)
+// Step 5: Confirm the normalized Trust Center portal URL.
+String actualPortalUrl = WebUI.getUrl().replaceAll('/+$', '')
+WebUI.verifyEqual(actualPortalUrl, portalUrl)
 
 // Step 6: Return to the Hexure public website so the footer link can be checked again.
 WebUI.navigateToUrl('https://hexure.com/')

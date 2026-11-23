@@ -16,8 +16,9 @@ try {
     // Step 3: Click Learn More and wait for navigation.
     WebUI.click(findTestObject('Object Repository/HEXURE-3 Announcement banner and promotional popup behavior/HEXURE3_LearnMoreLink'))
     WebUI.waitForPageLoad(15)
-    // Step 4: Verify the press-release destination.
-    WebUI.verifyMatch(WebUI.getUrl(), '(?i).*icapital.*', true)
+    // Step 4: Verify the press-release destination using a normalized URL.
+    String actualUrl = WebUI.getUrl().replaceAll('/+$', '')
+    WebUI.verifyMatch(actualUrl, '(?i)^https?://[^/]*icapital[^/]*(?:/.*)?$', true)
     WebUI.comment('The destination was opened; browser navigation is the authoritative HTTP check for this UI test.')
 } finally {
     // Step 5: Close the browser.

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify both Request a Consultation CTAs are visible, hoverable, and keyboard-addressable.</description>
+   <name>Consultation CTAs Provide Visible Pointer and Keyboard States</name>
+   <tag>GenAI</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>createdByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Kevin Jackey</value>
+         </entry>
+         <entry>
+            <key>createdByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>979c0f44-10a8-4240-8778-ad389c98fe4c</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment>Step documentation: 1) Open the public website. 2) Locate the header CTA and verify its visible interaction target. 3) Locate the hero CTA and verify its visible interaction target. 4) Confirm both controls expose the expected consultation destination.</comment>
+   <origin>STUDIOASSIST</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1aabbbb2-169b-42f4-9c19-edf5e29da6ee</testCaseGuid>
+</TestCaseEntity>

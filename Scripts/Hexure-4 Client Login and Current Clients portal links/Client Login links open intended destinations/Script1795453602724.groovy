@@ -13,14 +13,16 @@ WebUI.verifyElementPresent(findTestObject('Hexure-4 Client Login and Current Cli
 // Step 3: Navigate to the expected Client Corner Login destination.
 WebUI.navigateToUrl('https://www.insurancetechnologies.com/clientcorner/')
 
-// Step 4: Confirm that the Client Corner Login URL resolves to the expected domain and path.
-WebUI.verifyMatch(WebUI.getUrl(), 'https://www.insurancetechnologies.com/clientcorner/.*', true)
+// Step 4: Confirm the normalized Client Corner Login URL.
+String clientCornerUrl = WebUI.getUrl().replaceAll('/+$', '')
+WebUI.verifyMatch(clientCornerUrl, '(?i)^https://www\\.insurancetechnologies\\.com/clientcorner(?:\\?.*)?$', true)
 
 // Step 5: Navigate to the expected IXN Client Login destination.
 WebUI.navigateToUrl('https://dashboard.ixn.tech/#/login')
 
-// Step 6: Confirm that the IXN Client Login URL resolves to the expected dashboard domain.
-WebUI.verifyMatch(WebUI.getUrl(), 'https://dashboard\\.ixn\\.tech/.*', true)
+// Step 6: Confirm the normalized IXN Client Login URL.
+String ixnUrl = WebUI.getUrl().replaceAll('/+$', '')
+WebUI.verifyMatch(ixnUrl, '(?i)^https://dashboard\\.ixn\\.tech/.*$', true)
 
 // Step 7: Close the browser after both desktop Client Login destinations have been validated.
 WebUI.closeBrowser()

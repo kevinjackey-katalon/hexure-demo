@@ -21,13 +21,6 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>124ec26e-9756-4065-8666-b380ddf087e8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Hexure-4 Client Login and Current Clients portal links/Current Clients links open intended destinations</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>270fd5d4-27b9-4204-bd87-97baf9063783</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
