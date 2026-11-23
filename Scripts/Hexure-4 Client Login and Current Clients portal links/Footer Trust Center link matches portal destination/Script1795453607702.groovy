@@ -8,7 +8,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 CustomKeywords.'CommonLogin.openUrlAndAcceptPrivacy'('https://hexure.com/')
 
 // Step 2: Verify that the desktop footer Trust Center link is present.
-WebUI.verifyElementPresent(findTestObject('Hexure-4 Client Login and Current Clients portal links/Footer Trust Center'), 10)
+WebUI.verifyElementPresent(findTestObject('HEXURE-4 Client Login and Current Clients portal links/Footer Trust Center'), 10)
 
 // Step 3: Define the expected Trust Center portal URL.
 String portalUrl = 'https://trust.hexure.com'
@@ -24,7 +24,7 @@ WebUI.verifyEqual(actualPortalUrl, portalUrl)
 WebUI.navigateToUrl('https://hexure.com/')
 
 // Step 7: Verify that the desktop footer Trust Center link remains present after returning.
-WebUI.verifyElementPresent(findTestObject('Hexure-4 Client Login and Current Clients portal links/Footer Trust Center'), 10)
+WebUI.verifyElementPresent(findTestObject('HEXURE-4 Client Login and Current Clients portal links/Footer Trust Center'), 10)
 
 // Step 8: Close the browser after validating the Trust Center portal and footer link.
 WebUI.closeBrowser()

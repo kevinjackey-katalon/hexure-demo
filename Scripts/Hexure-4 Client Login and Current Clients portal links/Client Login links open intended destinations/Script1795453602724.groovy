@@ -8,7 +8,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 CustomKeywords.'CommonLogin.openUrlAndAcceptPrivacy'('https://hexure.com/')
 
 // Step 2: Verify that the desktop Client Login navigation control is present.
-WebUI.verifyElementPresent(findTestObject('Hexure-4 Client Login and Current Clients portal links/Client Login menu'), 10)
+WebUI.verifyElementPresent(findTestObject('HEXURE-4 Client Login and Current Clients portal links/Client Login menu'), 10)
 
 // Step 3: Navigate to the expected Client Corner Login destination.
 WebUI.navigateToUrl('https://www.insurancetechnologies.com/clientcorner/')
