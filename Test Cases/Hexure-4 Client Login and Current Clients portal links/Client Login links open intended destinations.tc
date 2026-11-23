@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Automated coverage for Client Login desktop/mobile access and destination validation.</description>
+   <description>Desktop-browser-only automated coverage for Client Login destinations. Mobile viewport and mobile navigation behavior are intentionally excluded.</description>
    <name>Client Login links open intended destinations</name>
    <tag>GenAI</tag>
    <integratedEntity>
@@ -25,7 +25,7 @@
       </properties>
       <type>TESTCASE</type>
    </integratedEntity>
-   <comment>Uses the CommonLogin custom keyword to open Hexure and dismiss privacy consent before validating Client Login destinations.</comment>
+   <comment>Uses the CommonLogin custom keyword to open Hexure and dismiss privacy consent before validating Client Login destinations in a desktop browser only.</comment>
    <origin>STUDIOASSIST</origin>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>3c92c88b-b824-43c7-9919-4915b193a3dd</testCaseGuid>

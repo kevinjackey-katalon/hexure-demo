@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Automated coverage for the footer Trust Center destination and consistency with the portal URL.</description>
+   <description>Desktop-browser-only automated coverage for the footer Trust Center destination and consistency with the portal URL. Mobile viewport and mobile navigation behavior are intentionally excluded.</description>
    <name>Footer Trust Center link matches portal destination</name>
    <tag>GenAI</tag>
    <integratedEntity>
@@ -25,7 +25,7 @@
       </properties>
       <type>TESTCASE</type>
    </integratedEntity>
-   <comment>Uses the CommonLogin custom keyword before validating the footer Trust Center object and URL.</comment>
+   <comment>Uses the CommonLogin custom keyword before validating the desktop footer Trust Center object and URL. Mobile behavior is intentionally out of scope.</comment>
    <origin>STUDIOASSIST</origin>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>4518f5a5-3b41-404a-bdb7-8a2541d6a578</testCaseGuid>
